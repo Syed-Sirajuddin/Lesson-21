@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    h1{
+        float:middle;
+        padding:20px
+    }
+    #div2{ color:Black ;
+border: 2px solid skyblue     
+    }
+</style>
+     </head>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+<body>
+<h1><strong>my phone contacts</strong></h1>
+<div id="div2"> 
+    <h4>name:</h4>                          
+    <p id ="id1"></p>
+    <br>
+    <h3>phone-number:</h3>
+    <p id ="id2"></p>
+    <br>
+    <p>city</p>
+    <p id="id3"></p>
+    <br>
+    <p>school:</p>
+    <p id="id4"></p>
+
+          </div>
+    <script>
+
+        var myContact = {
+    name: "Riya" ,
+    phone: "98745-78965" ,
+    city: "Mumbai" ,
+    school: "Sunrise Academy"
+        };
+            //Dot notation            
+           var E1= myContact.name;
+           var E2= myContact.phone;
+            document.getElementById("id1").innerHTML = myContact.name;
+            document.getElementById("id2").innerHTML = E2;
+
+            //Square-Bracket notation
+            
+            document.getElementById("id1").innerHTML = myContact["phone"];
+        </script>
+</body>
+</html>
